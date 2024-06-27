@@ -1,0 +1,34 @@
+{
+  "name": "forget-password-server",
+  "version": "1.0.0",
+  "description": "- SignUp check the existing database and update the new user\r   - By default inactive account is created and a activation link will be sent to the user email through node mailer\r - Login check the user data and allow the login\r - Endpoint to resend the activation email\r - Forgot Password creates a temporary token and send a mail to the user to update the password\r - Gets a Full URL from user and create a Hsort URL\r - when the Short URL is clicked it will Redirect the user to Full URL\r - Update the Short URL Count everytime the short url is clicked",
+  "main": "index.js",
+  "engine": {
+    "node": "18.18.2"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "bson": "^6.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^5.13.22",
+    "nodemailer": "^6.9.7",
+    "short-unique-id": "^5.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": []
+}
